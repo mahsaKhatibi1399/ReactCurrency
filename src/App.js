@@ -27,8 +27,9 @@ function App() {
 
 
   return (
-    <>
-    </>
+    <div style={{ backgroundColor: 'currentColor', height: '100%' }}>
+      {value.Currency.map(data => <CurrencyData data={data} />)}
+    </div>
   );
 }
 
