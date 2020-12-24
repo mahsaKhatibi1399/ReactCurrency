@@ -2,7 +2,7 @@ import React from 'react';
 
 const CurrencyData = ({ data }) => {
     return (
-        <div style={{ width: '50%', height: '100px', borderRadius: '5px', background: '#c7c7c7', margin: '10px' }}>
+        <div style={{ width: '100%', height: '100px', borderRadius: '5px', background: '#c7c7c7', margin: '10px' }}>
             <div>
                 <span> {data.title} </span>
             </div>
