@@ -8,14 +8,18 @@ const CurrencyData = ({ data }) => {
                 <span> {data.title} </span>
             </div>
             <div>
-                <span> قیمت : </span>
-                <span>  {data.p} تومان </span>
-
-                <span> حداکثر قیمت : </span>
-                <span>{data.h}</span>
-
-                <span> حداقل قیمت : </span>
-                <span>{data.l}</span>
+                <div className='col'>
+                    <span> قیمت : </span>
+                    <span>  {data.p} تومان </span>
+                </div>
+                <div className='col'>
+                    <span> حداکثر قیمت امروز: </span>
+                    <span>{data.h} تومان </span>
+                </div>
+                <div className='col'>
+                    <span>  حداقل قیمت امروز: </span>
+                    <span>{data.l} تومان </span>
+                </div>
             </div>
             <div>
                 <span> آخرین تغییرات : </span>
