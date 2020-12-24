@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import CurrencyData from './CurrencyData';
+import './App.css';
 
 function App() {
 
@@ -28,8 +29,8 @@ function App() {
 
 
   return (
-    <div style={{ backgroundColor: 'currentColor', height: '100%' }}>
-      <div style={{ padding: '1px' }} >
+    <div className='containers'>
+      <div className='row'>
         {!!value ? value.map(data => <CurrencyData key={data.slug} data={data} />) : ''}
       </div>
     </div>
